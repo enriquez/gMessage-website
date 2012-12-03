@@ -1,0 +1,30 @@
+body { font-family: "proxima-nova",sans-serif; font-size: 1em; }
+#gmessage-icon { width: 40%; }
+
+@media (min-width: 768px) {
+  #container {
+    margin-top: 40px;
+  }
+
+  #info {
+    margin-top: 100px;
+  }
+
+  #footer {
+    margin-top: 20px;
+    border-top: 1px solid #bbbbbb;
+  }
+
+  #footer address {
+    margin-top: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  #info, #iphone {
+    margin: 20px 0;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #bbbbbb;
+  }
+}
