@@ -1,0 +1,60 @@
+---
+layout: layout
+javascript: faq.js
+css: faq.css
+---
+
+<div id="header" class="span8 offset2">
+  <h1><a href="/">gMessage for Google Voice</a></h1>
+</div>
+
+<div class="span8 offset2">
+  <h2>Frequently Asked Questions</h2>
+  <h3>General</h3>
+  <h4 class="question"><a href="#/general/what-is-gmessage" name="/general/what-is-gmessage">What is gMessage?</a></h4>
+  <div class="answer">
+    <p>gMessage is a Google Voice client for the iPhone. It can be used as a second phone line with free text messaging.</p>
+  </div>
+  <h4 class="question"><a href="#/general/i-need-help-or-have-feedback-for-gmessage" name="/general/i-need-help-or-have-feedback-for-gmessage">I need help or have feedback for gMessage</a></h4>
+  <div class="answer">
+    <p>Send me an email <a href="mailto:mike@gmessageapp.com">mike@gmessageapp.com</a> or a tweet <a href="http://twitter.com/gmessageapp">@gmessageapp</a>. I'm only one person, but I usually respond within a day.</p>
+  </div>
+
+  <h3>Google Voice</h3>
+  <h4 class="question"><a href="#/google-voice/what-is-google-voice" name="/google-voice/what-is-google-voice">What is Google Voice?</a></h4>
+  <div class="answer">
+    <p>Google Voice is a free service that provides you with a phone number that you can use for free text messages to the U.S. and Canada.  <a href="http://www.google.com/voice">Learn more and sign up for Google Voice.</a></p>
+  </div>
+  <h4 class="question"><a href="#/google-voice/can-i-make-and-receive-phone-calls-with-my-google-voice-number" name="/google-voice/can-i-make-and-receive-phone-calls-with-my-google-voice-number">Can I make and receive calls with my Google Voice number?</a></h4>
+  <div class="answer">
+    <p>Yes. Calls to your Google Voice number can be forwarded to your phone number. Calls from gMessage are made from your Google Voice phone number. Both incoming and outgoing calls use your carrier's minutes.</p>
+  </div>
+
+  <h3>Push Notifications</h3>
+  <h4 class="question"><a href="#/push-notifications/how-does-it-work" name="/push-notifications/how-does-it-work">How does it work?</a></h4>
+  <div class="answer">
+    <p>Push notifications will originate from Google Voice through the SMS email notification feature. You set it up by enabling this feature, then by forwarding those emails to the gMessage email address. The gMessage push notification server will process these emails and send notifcations to your device. The emails are immediately deleted once the push notification is sent.  It is very round-about, but once it is setup you don't have to think about it again.</p>
+    <p>A temporary access token to your Google Voice account is sent to the push notification server. It is used to authorize you by getting your Google Voice phone number. Your Google Voice phone number and device token for push notifications are safely stored. Your email address and password never touch the push notification server.</p>
+  </div>
+  <h4 class="question"><a href="#/push-notifications/im-having-problems-setting-it-up" name="/push-notifications/im-having-problems-setting-it-up">I'm having problems setting it up.</a></h4>
+  <div class="answer">
+    <p>Make sure you followed the directions in the settings carefully. Double check that you typed everything in correctly. Also, try turning the push notification setting off and back on.  If it still doesn't work, contact support at <a href="mailto:mike@gmessageapp.com">mike@gmessageapp.com</a>.</p>
+  </div>
+  <h4 class="question"><a href="#/push-notifications/can-i-get-voicemail-notifications" name="/push-notifications/can-i-get-voicemail-notifications">Can I get voicemail notifications?</a></h4>
+  <div class="answer">
+    <p>Not at this time.  I haven't investigated a secure way of doing this.</p>
+    <p>For me, the email notification is enough. Unlike text messages, I don't need to open and respond to voicemail messages right away.</p>
+  </div>
+
+  <h3>Security</h3>
+  <h4 class="question"><a href="#/security/are-my-credentials-safe" name="/security/are-my-credentials-safe">Are my credentials safe?</a></h4>
+  <div class="answer">
+    <p>Yes. gMessage communicates directly with the Google Voice servers through SSL. Your credentials are stored in your iPhone's secure keychain.</p>
+    <p>For push notifications, your credentials are used to generate a temporary token which is sent to the push notification server. The push notification server verifies the token and immediately throws it away.</p>
+  </div>
+
+  <h4 class="question"><a href="#/security/is-2-step-verification-supported" name="/security/is-2-step-verification-supported">Is 2-step verification supported?</a></h4>
+  <div class="answer">
+    <p>Yes. Generate a application specific password for gMessage.</p>
+  </div>
+</div>

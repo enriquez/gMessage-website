@@ -1,0 +1,18 @@
+#gmessage-icon { width: 40%; }
+
+@media (min-width: 768px) {
+  #info {
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 767px) {
+  #info, #iphone {
+    margin: 20px 0;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  #info {
+    border-bottom: 1px solid #bbb;
+  }
+}
